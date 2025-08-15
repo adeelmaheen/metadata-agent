@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key:
-        st.error("OpenAI API key is not set in the environment variables.")
+if not api_key:
+    st.error("OpenAI API key is not set in the environment variables.")
 
 st.title("Chat with Metadata/Trace")
 
